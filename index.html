@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Imminent - Demo</title>
+    <title>You & Me</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -16,7 +16,8 @@
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- script
     ================================================== -->
@@ -32,7 +33,7 @@
 
 </head>
 
-<body>
+<body id="top">
 
     <!-- preloader
     ================================================== -->
@@ -44,77 +45,279 @@
         </div>
     </div>
 
-    <!-- header 
+    <!-- site header
     ================================================== -->
-    <header>
-        <div class="row">
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div>
+
+        <div class="header-email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"/></svg>
+            <a href="mailto:#0">lakshmantomar@gmail.com</a>
+        </div>
+
+    </header> <!-- end s-header -->
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro s-intro--static">
+
+        <div class="grid-overlay">
+            <div></div>
+        </div> 
+
+        <div class="row intro-content">
+
             <div class="column">
 
-                <h1>Imminent<span>.</span></h1>
+                <div class="intro-content__text">
 
-                <p class="lead">
-                Imminent is a modern and elegant free coming soon website template. A fully-featured, 
-                handcrafted website template built with attention to details. You're gonna love its 
-                beautifully designed hero banner with its 
-                subtle animation and nice typography. It has a nice animated countdown timer, 
-                subscription form, tabs where you can put additional information about your site. 
-                It comes in three style variants: static, slideshow and particle background. 
-                Also, the code behind this template is clean, organized and well-commented 
-                making it easy to customize.
+                    <h3>
+                    Coming Soon
+                    </h3>
+                    
+                    <h1>
+                    Get ready everyone. <br>
+                    We are currently <br>
+                    working on a super <br>
+                    awesome website.
+                    </h1>
+
+                </div> <!-- end intro-content__text -->
+
+                <div class="intro-content__bottom">
+
+                    <div class="intro-content__counter-wrap">
+                        <h4>Launching in</h4>
+            
+                        <div class="counter">
+                            <div class="counter__time days">
+                                365
+                                <span>D</span>
+                            </div>
+                            <div class="counter__time hours">
+                                09
+                                <span>H</span>
+                            </div>
+                            <div class="counter__time minutes">
+                                54
+                                <span>M</span>
+                            </div>
+                            <div class="counter__time seconds">
+                                57
+                                <span>S</span>
+                            </div>
+                        </div>  <!-- end counter -->
+                    </div> <!-- end intro-content__counter-wrap -->
+
+                    <div class="intro-content__notify">
+                        <button type="button" class="btn--stroke btn--small modal-trigger">
+                            Notify Me
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12l-9-9v7h-15v4h15v7z"/></svg>
+                        </button>
+                    </div> <!-- end intro-content__notify -->
+    
+                </div> <!-- end intro-content__bottom -->
+
+            </div> <!-- end column -->
+
+        </div> <!--  end intro-content -->
+
+        <div class="modal">
+            <div class="modal__inner">
+
+                <span class="modal__close"></span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+
+                <h3>Sign Up</h3>
+                <p>
+                Be the first to know about the latest updates.
                 </p>
 
-            </div>
-        </div>
-    </header> <!-- end header -->
+                <form id="mc-form" class="group mc-form" novalidate="true">
+                    <input type="email" value="" name="EMAIL" class="email h-full-width h-text-center h-add-half-bottom" id="mc-email" placeholder="Email Address" required="">
+                    <input type="submit" name="subscribe" value="Subscribe" class="btn--small h-full-width">
+                    <label for="mc-email" class="subscribe-message"></label>
+                </form>
+
+            </div> <!-- end modal inner -->
+        </div> <!-- end modal -->
 
 
-    <!-- main content
+
+        <ul class="intro-social">
+            <li><a href="https://www.facebook.com/laxman.singhtomar.9849"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.twitter.com/LxmnSinghTomar"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        </ul> <!-- end intro social -->
+
+        <div class="intro-scroll">
+            <a href="#info" class="scroll-link smoothscroll">
+                Scroll For More
+            </a>
+        </div> <!-- end intro scroll -->
+
+    </section> <!-- end s-intro -->
+
+    <!-- info
     ================================================== -->
-    <main>
-        <div class="row block-large-1-3 block-medium-1-2 block-tab-full">
-           
-            <div class="column entry">
-                <div class="entry__thumb">
-                    <a href="index-static.html" title="static background">
-                        <img src="images/demo/imminent-static.jpg" srcset="images/demo/imminent-static.jpg 1x, images/demo/imminent-static@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-                <div class="entry__title">
-                    <h3>Static Background</h3>
-                </div>
-            </div>
+    <section id="info" class="s-info">
 
-            <div class="column entry">
-                <div class="entry__thumb">
-                    <a href="index-slides.html" title="slideshow background">
-                        <img src="images/demo/imminent-slides.jpg" srcset="images/demo/imminent-slides.jpg 1x, images/demo/imminent-slides@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-                <div class="entry__title">
-                    <h3>Slideshow Background</h3>
-                </div>
-            </div>
+        <div class="vert-line"></div>
+        
+        <div class="row info-content">
+            <div class="column">
+                
+                <nav class="tab-nav">
+                    <ul class="tab-nav__list"> 
+                        <li class="active" data-id="tab-about">
+                            <a href="#0">
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li data-id="tab-services">
+                            <a href="#0">
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li data-id="tab-contact">
+                            <a href="#0">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav> <!-- end tab-nav -->
 
-            <div class="column entry">
-                <div class="entry__thumb">
-                    <a href="index-particles.html" title="particles background">
-                        <img src="images/demo/imminent-particles.jpg" srcset="images/demo/imminent-particles.jpg 1x, images/demo/imminent-particles@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-                <div class="entry__title">
-                    <h3>Particles Background</h3>
-                </div>
-            </div>
-            
-        </div>
-    </main> <!--  end main -->
+                <div class="tab-content">
+
+                    <!-- 01. tab about -->
+                    <div id="tab-about" class='tab-content__item'>
+
+                        <div class="row tab-content__item-header">
+                            <div class="column">
+                                <h1>Hello. We are Kavita and Laxman.</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <p class="lead">
+                                Two young souls bumped into each other amidst ongoing chaos in their lives through a 30 second Whatsapp Story. The guy ardently sent  a voice note to initiate a conversation...
+                                </p>
+
+                                <p>
+                                Guys! This isn't a jaw dropping sequence from a thriller or a piece from a romantic novel. It's how both of us met. I know it's strange; but let's put it this way:it's weirdly beautiful. Don't worry there will not be any spoilers. This blog aims to explain everything that we've experienced sitting more than 2600 kms away from each other over the course of more than 19 months. The hardships, the joys, the smiles, the tears, the laughs. From weird faces over video calls to days of silencen when we were mad at each other. It contains everything. So, don't let this crazy feast to be not part of your daily menu. Sit back and relax to go through lives of a budding cum blossoming couple.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div> <!-- end 01. tab about -->
+
+                    <!-- 02. tab services -->
+                    <div id="tab-services" class='tab-content__item'>
+
+                        <div class="row tab-content__item-header">
+                            <div class="column">
+                                <h1>What we do.</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <p class="lead">
+                                I(Laxman) and Kavita are both undergoing our graduation. I'm a final year computer science engineering student and she is a bachelor of buisness administration student. Both of us aim to thrive in our careers ahead.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        
+                    </div> <!-- end 02. tab services -->
+
+                    <!-- 03. tab contact -->
+                    <div id="tab-contact" class="tab-content__item">
+
+                        <div class="row tab-content__item-header">
+                            <div class="column">
+                                <h1>Get In Touch With Us.</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <p class="lead">
+                                It won't be fun if you guys won't join us in our journey. 
+                                </p>
+
+                                <div class="row">
+                                    <div class="column large-six tab-full">
+                                        <h4>Where to Find Us</h4>
+                
+                                        <p>
+                                        Agra & Tinsukia<br>
+                                        282004 & 786125<br>
+                                        IND
+                                        </p>
+                
+                                    </div>
+                
+                                    <div class="column large-six tab-full">
+                                        <h4>Follow Us</h4>
+                
+                                        <ul class="link-list">
+                                            <li><a href="https://www.facebook.com/laxman.singhtomar.9849">Facebook</a></li>
+                                            <li><a href="https://www.twitter.com/LxmnSinghTomar">Twitter</a></li>
+
+                                        </ul>
+                
+                                    </div>
+                                </div>
+
+                                <p class="tab-content__item-bottom">
+                                    <a href="mailto:#0" class="contact-email">lakshmantomar@gmail.com</a>
+                                    <span class="contact-number"> 
+                                        <a href="tel:8218552337">+918218552337</a>
+                                        <a href="tel:8979146880">+918979146880</a>
+                                    </span>
+                                </p>
+
+                            </div>
+                        </div>
+                        
+                    </div> <!-- end 03. tab contact -->
+
+                </div> <!-- end tab content -->
+
+                <footer>
+
+                    <div class="ss-copyright">
+                        <span>© Copyright  2019</span> 
+                        <span>Design by <a href="https://www.laxmansinghtomar.github.io/">Laxman</a></span>
+                    </div>
+
+                    <div class="ss-go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"></path></svg>
+                        </a>
+                    </div>
+                    
+                </footer>
+
+            </div> <!-- end column -->
+        </div> <!-- end row -->
+
+    </section> <!-- end s-info -->
 
     <!-- Java Script
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particle-settings.js"></script>
     <script src="js/main.js"></script>
 
 </body>
-
-</html>
